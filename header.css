@@ -1,0 +1,289 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.my-btntop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #ad0002;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+
+  cursor: pointer;
+}
+.my-navbrand {
+  font-weight: bolder;
+  font-size: 2vw;
+  margin-left: 0.5vw;
+  line-height: 0.8rem;
+  margin-bottom: 0.3rem;
+  margin-top: 1vw;
+  color: red;
+  transiton: ease 0.3s;
+}
+.my-navbrand:hover {
+  color: #1b1717;
+}
+
+.my-navbrand img {
+}
+
+.my-navlink {
+}
+
+.my-navlink a {
+  font-size: 1.5vw;
+  margin-right: 1.7vw;
+  color: white;
+  transition: ease 0.3s;
+}
+.my-navlink a:hover {
+  font-weight: bold;
+  color: red;
+}
+
+.my-dropdown {
+  background: none;
+  color: white;
+  display: none;
+}
+.dropdown:hover .my-dropdown {
+  display: block;
+  background: none;
+}
+.my-carojumbotron {
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+  border-radius: 0;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
+}
+.my-carojumbotron h3 {
+  margin-top: -2vw;
+  line-height: 0.5vw;
+  font-weight: lighter;
+  color: red;
+  filter: contrast(80%);
+  font-size: 2.5vw;
+}
+.my-carojumbotron h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 300px) and (max-width: 770px) {
+  .my-carojumbotron {
+    display: none;
+  }
+}
+
+.my-carocaption {
+  width: 50vw;
+  height: 35vw;
+  margin-left: -10vw;
+  background: none;
+  float: left;
+}
+.my-carocaption h3 {
+  float: left;
+  font-size: 4vw;
+  font-weight: lighter;
+  line-height: 3.5vw;
+}
+.my-carocaption h1 {
+  float: left;
+  font-weight: bolder;
+  font-size: 4.5vw;
+  line-height: 3.5vw;
+}
+
+.my-carocaption button {
+  color: white;
+  font-size: 2vw;
+  font-weight: bolder;
+  background-color: red;
+  border: solid red;
+  width: 30vw;
+  float: left;
+  margin-left: 5vw;
+  transition: ease 0.6s;
+}
+.my-carocaption button:hover {
+  color: red;
+  background: none;
+}
+
+.my-button {
+  color: white;
+  font-size: 1.4vw;
+
+  font-weight: bolder;
+  background-color: red;
+  border: solid red 0.3vw;
+  width: 20vw;
+  float: left;
+
+  transition: ease 0.6s;
+}
+.my-button:hover {
+  color: red;
+  background: none;
+}
+
+.my-parallaxjumbo {
+  margin-top: 15vw;
+  text-align: center;
+  padding-bottom: 10vw;
+  margin: auto;
+}
+.my-parallaxjumbo a {
+  color: #1b1717;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.my-parallaxjumbo p {
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+}
+
+.my-parallaxjumbo img {
+  width: 5vw;
+  height: 5vw;
+  margin-bottom: 3vw;
+  margin-top: 3vw;
+}
+.my-gallery {
+  height: 98%;
+  width: 94%;
+  position: absolute;
+  opacity: 0;
+  transition: ease 0.3s;
+}
+.my-gallery:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding-top: 11rem;
+}
+
+.my-gallery2 {
+  height: 98%;
+  width: 90%;
+  position: absolute;
+  opacity: 0;
+  transition: ease 0.3s;
+}
+.my-gallery2:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding-top: 4rem;
+}
+.info-section {
+  color: black;
+}
+.info-section div {
+  width: 30vw;
+  height: 30vw;
+  border: none;
+  background: none;
+}
+
+.info-section label {
+  font-style: italic;
+  font-size: 2vw;
+}
+
+.info-section textarea {
+  width: 35vw;
+  height: 5vw;
+}
+.info-section :: placeholder {
+  color: black;
+}
+.info-section hr {
+  width: 84%;
+  margin-left: 2vw;
+  margin-top: 0.2vw;
+  color: white;
+  margin-bottom: 1vw;
+}
+
+.info-section button:hover {
+  cursor: pointer;
+  background: none;
+  transform: scale(1.1, 1.1);
+}
+
+.my-footer {
+  border-radius: 0;
+  background-image: url(images/f1.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.my-footer a {
+  color: #c4c4c4;
+  line-height: 3vw;
+  transition: ease 0.4s;
+  text-decoration: none;
+}
+.my-footer a:hover {
+  margin-left: 1vw;
+}
+
+.my-footericon {
+  color: #c4c4c4;
+  margin-right: 1rem;
+  transition: ease 0.3s;
+}
+.my-footericon:hover {
+  transform: rotate(360deg) scale(1.2, 1.2);
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 75%;
+    height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+    left: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+    transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapsed {
+    transition: left 500ms ease-in-out;
+  }
+}

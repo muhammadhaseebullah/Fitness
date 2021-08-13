@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BODY BULIDING!</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <script>
+    function myteam(src) {
+      document.getElementById("trainer").src = src;
+    }
+  </script>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-md position-sticky fixed-top"
+      style="box-shadow: 0px 5px 7px grey; background-color: black"
+    >
+      <a href="" class="navbar-brand my-navbrand"
+        ><img src="images/logo.png" alt=""
+      /></a>
+
+      <button
+        class="navbar-toggler bg-white"
+        data-toggle="collapse"
+        data-target="#links "
+      >
+        <span class="fa fa-navicon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        style="background: rgba(0, 0, 0, 1)"
+        id="links"
+      >
+        <ul class="navbar-nav my-navlink ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link" data-toggle="dropdown">Blog</a>
+            <ul class="dropdown-menu my-dropdown">
+              <li class="dropdown-item">
+                <a href="#blog" class="nav-link text-dark" data-toggle="modal"
+                  >Blog</a
+                >
+              </li>
+              <li class="dropdown-item">
+                <a href="" class="nav-link text-dark">Blog Details</a>
+              </li>
+              <li class="dropdown-item">
+                <a
+                  href="#elements"
+                  data-toggle="modal"
+                  class="nav-link text-dark"
+                  >Elements</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="carousel slide" id="icon" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/2.jpg" class="img-fluid" />
+          <div
+            class="jumbotron carousel-caption position-absolute my-carocaption"
+          >
+            <h3 class="animate__animated animate__backInDown">
+              BUILD PERFECT BODY
+            </h3>
+            <h1 class="animate__animated animate__backInLeft">
+              SHAPE FOR GOOD<br />AND <br />HEALTHY LIFE
+            </h1>
+            <button class="btn animate__animated animate__flipInY">
+              BECAME A MEMBER
+            </button>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/3.jpg" class="img-fluid" />
+          <div
+            class="jumbotron carousel-caption position-absolute my-carocaption"
+          >
+            <h3 class="animate__animated animate__backInDown">
+              PAIN IS NOTIHING
+            </h3>
+            <h1 class="animate__animated animate__backInLeft">
+              COMPARE TO <br />
+              WHAT IT FEELS <br />LIKE TO QUIT
+            </h1>
+            <button
+              class="btn animate__animated animate__flipInY"
+              style="margin-left: 2.5vw"
+            >
+              BECAME A MEMBER
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/4.jpg" class="img-fluid" />
+          <div
+            class="jumbotron carousel-caption position-absolute my-carocaption"
+          >
+            <h3
+              class="animate__animated animate__backInDown"
+              style="margin-left: 7.8vw"
+            >
+              STAY DEDICATED,
+            </h3>
+            <h1 class="animate__animated animate__backInLeft">
+              IT'S NOTHING GOING<br />TO HAPPEN<br />OVER NIGHT.
+            </h1>
+            <button
+              class="btn animate__animated animate__flipInY"
+              style="margin-left: 9vw"
+            >
+              BECAME A MEMBER
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="jumbotron position-absolute mb-0 my-carojumbotron visible-lg"
+        >
+          <div class="row text-center">
+            <div class="col-md-4">
+              <h3>CALL US 24/7</h3>
+              <h1>+123-456-7890</h1>
+            </div>
+            <div class="col-md-4">
+              <h3>EMAIL ADDRESS</h3>
+              <h1>example@example.com</h1>
+            </div>
+            <div class="col-md-4">
+              <h3>OPEN HOURS</h3>
+              <h1>DAILY 9:00-20:00</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#icon" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#icon" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <a href="#" class="my-btntop"
+      ><span class="fa fa-arrow-circle-up"></span
+    ></a>
+
+    <div class="container" style="margin-top: 10vw; margin-bottom: 10vw">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="images/6.png"
+            class="img-fluid"
+            style="width: 75.5vw; height: 40vw"
+          />
+        </div>
+        <div class="col-md-6" style="margin-top: 5vw">
+          <hr color="red" style="width: 3vw; float: left; margin-right: 1vw" />
+          <span style="color: red; font-weight: lighter"
+            ><h3 style="filter: contrast(0.5)">ABOUT OUR GYM</h3></span
+          >
+          <h1 style="color: #1b1717; line-height: 2.8vw; font-size: 3vw">
+            SAFE BODY BUILDING PROPER SOLUTIONS THAT SAVES OUR VALUABLE TIME!
+          </h1>
+          <p style="color: #1b1717">
+            Brook presents your services with flexible, convenient and cdpose
+            layouts. You can select your favorite layouts & elements for cular
+            ts with unlimited ustomization possibilities. Pixel-perfect
+            replication of the designers is intended.
+          </p>
+          <p style="filter: contrast(1%)">
+            Brook presents your services with flexible, convefnient and chient
+            anipurpose layouts. You can select your favorite layouts.
+          </p>
+
+          <button class="btn my-button">BECAME A MEMBER</button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="jumbotron"
+      style="
+        border-radius: 0;
+        height: 1000px;
+        background-image: url(images/7.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      "
+    >
+      <div class="container" style="margin-top: 7vw">
+        <span style="color: red; font-weight: lighter"
+          ><h3 style="filter: contrast(0.5); font-size: 2vw">
+            OUR SERVICES FOR YOU
+          </h3></span
+        >
+        <h1 style="font-weight: bolder; color: white; font-size: 3vw">
+          PUSH YOUR LIMITS FORWARD <br />
+          WE OFFER TO YOU
+        </h1>
+      </div>
+
+      <div class="container-fluid my-parallaxjumbo">
+        <div class="row" style="display: flex; justify-content: center">
+          <div class="col-md-3 bg-white" style="margin: 1rem">
+            <img src="images/8.png" class="img-fluid" /> <br />
+            <a href="" class="">QUALITY EQUIPMENT</a>
+            <p>
+              The sea freight service has grown <br />
+              consider ably in recent years. We spend <br />
+              timetting to kn.
+            </p>
+            <button class="btn">DISCOVER MORE ABOUT US</button>
+          </div>
+
+          <div class="col-md-3 bg-white" style="width: 30rem; margin: 1rem">
+            <img
+              src="images/9.jpg"
+              class="img-fluid"
+              style="width: 5.5vw; height: 5.5vw"
+            />
+            <br />
+            <a href="" class="">HEALTH CARING</a>
+            <p>
+              The sea freight service has grown <br />
+              consider ably in recent years. We spend <br />
+              timetting to kn.
+            </p>
+            <button class="btn">DISCOVER MORE ABOUT US</button>
+          </div>
+
+          <div class="col-md-3 bg-white" style="margin: 1rem">
+            <img src="images/8.png" class="img-fluid" /> <br />
+            <a href="" class="">QUALITY EQUIPMENT</a>
+            <p>
+              The sea freight service has grown <br />
+              consider ably in recent years. We spend <br />
+              timetting to kn.
+            </p>
+            <button class="btn">DISCOVER MORE ABOUT US</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="container" style="margin-top: 20vw">
+      <div class="row" style="margin-top: 10vw">
+        <div class="col-md-6">
+          <div class="container my-gallery text-center">
+            <span
+              class="fa fa-arrow-circle-right fa-3x"
+              style="color: red"
+            ></span>
+            <h3 style="color: white; font-weight: bolder">
+              Best Fitness Gallery
+            </h3>
+            <h6 style="color: white; font-weight: lighter">Fitness, Body</h6>
+          </div>
+          <img
+            src="images/10.png"
+            class="img-fluid"
+            style="margin-bottom: 1vw"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="container my-gallery2 text-center">
+                <span
+                  class="fa fa-arrow-circle-right fa-2x"
+                  style="color: red"
+                ></span>
+                <h5 style="color: white; font-weight: bolder; font-size: 1vw">
+                  Best Fitness Gallery
+                </h5>
+                <p style="color: white; font-weight: lighter; font-size: 1vw">
+                  Fitness, Body
+                </p>
+              </div>
+              <img
+                src="images/11.png"
+                class="img-fluid p-0 m-0"
+                style="margin-bottom: 1vw"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="container my-gallery2 text-center">
+                <span
+                  class="fa fa-arrow-circle-right fa-2x"
+                  style="color: red"
+                ></span>
+                <h5 style="color: white; font-weight: bolder; font-size: 1vw">
+                  Best Fitness Gallery
+                </h5>
+                <p style="color: white; font-weight: lighter; font-size: 1vw">
+                  Fitness, Body
+                </p>
+              </div>
+              <img
+                src="images/12.png"
+                class="img-fluid p-0 m-0"
+                style="margin-bottom: 1vw"
+              />
+            </div>
+          </div>
+          <div class="row" style="margin-top: 2.2vw">
+            <div class="col-md-6">
+              <div class="container my-gallery2 text-center">
+                <span
+                  class="fa fa-arrow-circle-right fa-2x"
+                  style="color: red"
+                ></span>
+                <h5 style="color: white; font-weight: bolder; font-size: 1vw">
+                  Best Fitness Gallery
+                </h5>
+                <p style="color: white; font-weight: lighter; font-size: 1vw">
+                  Fitness, Body
+                </p>
+              </div>
+              <img
+                src="images/13.png"
+                class="img-fluid p-0 m-0"
+                style="margin-bottom: 1vw"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="container my-gallery2 text-center">
+                <span
+                  class="fa fa-arrow-circle-right fa-2x"
+                  style="color: red"
+                ></span>
+                <h5 style="color: white; font-weight: bolder; font-size: 1vw">
+                  Best Fitness Gallery
+                </h5>
+                <p style="color: white; font-weight: lighter; font-size: 1vw">
+                  Fitness, Body
+                </p>
+              </div>
+              <img
+                src="images/14.png"
+                class="img-fluid p-0 m-0"
+                style="margin-bottom: 1vw"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 10vw">
+      <div class="row" style="margin-top: 3vw">
+        <div class="col-md-7">
+          <hr color="red" style="width: 5%; float: left; margin-right: 1vw" />
+          <h5 style="filter: contrast(0.5); color: red; font-weight: bolder">
+            OUR TEAM MAMBERS
+          </h5>
+          <h1
+            style="
+              margin-top: 1.5vw;
+              font-weight: bolder;
+              color: #1b1717;
+              font-size: 3vw;
+            "
+          >
+            OUR MOST EXPRIENCED TRAINERS
+          </h1>
+          <ul class="list-unstyled" style="margin-top: 1vw">
+            <li>
+              <h1
+                style="color: #1b1717; cursor: pointer; font-size: 3vw"
+                onClick="myteam('images/t1.jpg')"
+              >
+                Jhon Sunsaev,
+                <span style="color: red; filter: contrast(60%)"
+                  >Creative derector</span
+                >
+              </h1>
+            </li>
+            <li>
+              <h1
+                style="color: #1b1717; cursor: pointer; font-size: 3vw"
+                onClick="myteam('images/t2.jpg')"
+              >
+                Michael Mk,
+                <span style="color: red; filter: contrast(60%)"
+                  >fitness Expert</span
+                >
+              </h1>
+            </li>
+            <li>
+              <h1
+                style="color: #1b1717; cursor: pointer; font-size: 3vw"
+                onClick="myteam('images/t3.jpg')"
+              >
+                Mike Tyson,<span style="color: red; filter: contrast(60%)"
+                  >Influencer</span
+                >
+              </h1>
+            </li>
+          </ul>
+          <button class="btn my-button" style="float: left; margin-top: 1vw">
+            MORE SERVICES
+          </button>
+        </div>
+        <div class="col-md-5">
+          <img
+            src="images/t1.jpg"
+            class="img-fluid"
+            id="trainer"
+            style="width: 23.125vw; height: 29.185vw"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 10vw; margin-bottom: 10vw">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="images/xabout2.png.pagespeed.ic.O1Y5WY8o2W.webp"
+            class="img-fluid m-0 p-0"
+            style=""
+          />
+        </div>
+
+        <div class="col-md-6">
+          <hr color="red" style="width: 5%; float: left; margin-right: 1vw" />
+          <h5 style="filter: contrast(0.5); color: red; font-weight: bolder">
+            CLIENT FEEDBACK
+          </h5>
+          <h1
+            style="
+              margin-top: 1.5vw;
+              font-weight: bolder;
+              color: #1b1717;
+              font-size: 2.5vw;
+            "
+          >
+            WHAT OUR CLIENT THINK ABOUT OUR GYM
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos qui
+            distinctio molestias nostrum consectetur laudantium reprehenderit
+            accusamus sunt quos sequi cumque quibusdam dolore laborum, hic
+            molestias modi, sunt! Tempore deleniti, voluptas fuga. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit. Expedita saepe, sed
+            autem reprehenderit beatae et rerum
+          </p>
+
+          <h1 style="color: #1b1717; font-size: 2vw">
+            Jhon Smith,
+            <span style="color: red; filter: contrast(60%)">Gym Trainer</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="images/contact_form.png"
+            class="img-fluid"
+            style="height: 40vw"
+          />
+        </div>
+        <div class="col-md-6">
+          <hr color="red" style="width: 5%; float: left; margin-right: 1vw" />
+          <h5 style="filter: contrast(0.5); color: red; font-weight: bolder">
+            CONTACT FORM
+          </h5>
+          <h1
+            style="
+              margin-top: 1.5vw;
+              font-weight: bolder;
+              color: #1b1717;
+              font-size: 3vw;
+            "
+          >
+            FEEL FREE TO CONTACT WITH US!
+          </h1>
+
+          <section class="info-section">
+            <div>
+              <form autocomplete="off">
+                <label for="name">name:</label>
+                <input type="text" id="name" />
+                <hr />
+                <label for="email">e-mail:</label>
+                <input type="email" id="email" />
+                <hr />
+                <label for="phone">phone:</label>
+                <input type="number" id="phone" />
+                <hr />
+                <label for="message">MESSAGE:</label>
+                <textarea
+                  id="message"
+                  style="color: black; font-size: 1.5vw"
+                ></textarea>
+              </form>
+              <button
+                class="btn my-button"
+                style="float: left; margin-top: 16px"
+              >
+                SEND MESSAGE
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid pl-0 pr-0">
+      <div
+        class="jumbotron mb-0"
+        style="
+          background-image: url(images/b1.png);
+          border-radius: 0;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-top: 5vw;
+        "
+      >
+        <div class="container row">
+          <div class="col-md-7">
+            <h1 style="font-weight: bolder; color: white; font-size: 4vw">
+              November membership offer available Now
+            </h1>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-3">
+            <button class="btn my-button" style="margin-top: 3vw">
+              MORE SERVICES
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron p-0 mb-0" style="border-radius: 0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.4386838793916!2d67.141737414478!3d24.883013850482545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3399ddc78c86b%3A0x233874fcf604fdde!2sDURRANI%20BROTHERS%20STORE!5e0!3m2!1sen!2s!4v1606551780524!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+
+      <div class="jumbotron mb-0 my-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h6
+                style="
+                  color: white;
+                  font-weight: bolder;
+                  font-family: 'Teko', sans-serif;
+                  margin-top: 4vw;
+                  margin-bottom: 4vw;
+                "
+              >
+                COMPANY
+              </h6>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Press & Blog</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6
+                style="
+                  color: white;
+                  font-weight: bolder;
+                  font-family: 'Teko', sans-serif;
+                  margin-top: 4vw;
+                  margin-bottom: 4vw;
+                "
+              >
+                OPEN HOUR
+              </h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Monday 11am-7pm</a></li>
+                <li><a href="#">Tuesday-friday 11am-8pm</a></li>
+                <li><a href="#">Saturady 10am-6pm</a></li>
+                <li><a href="#">Sunday 11am-6pm</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3">
+              <h6
+                style="
+                  color: white;
+                  font-weight: bolder;
+                  font-family: 'Teko', sans-serif;
+                  margin-top: 4vw;
+                  margin-bottom: 4vw;
+                "
+              >
+                RESOURCES
+              </h6>
+              <ul class="list-unstyled">
+                <li><a href="#">Home Insurance</a></li>
+                <li><a href="#">Travel Insurance</a></li>
+                <li><a href="#">Car Insurance</a></li>
+                <li><a href="#">Business Insurance</a></li>
+                <li><a href="#">Heal Insurance</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3">
+              <img
+                src="images/flogo.png"
+                class="img-fluid"
+                style="margin-top: 4vw; margin-bottom: 4vw"
+              />
+              <p style="color: #c4c4c4">
+                GThe trade war currently ensuing between te US anfd several
+                natxions around thdhe globe, most fiercely with.
+              </p>
+              <span class="fa fa-facebook-f fa-2x my-footericon"></span>
+              <span class="fa fa-twitter fa-2x my-footericon"></span>
+              <span class="fa fa-globe fa-2x my-footericon"></span>
+              <span class="fa fa-instagram fa-2x my-footericon"></span>
+            </div>
+          </div>
+
+          <hr color="#c4c4c4" style="width: 100%; margin-top: 10vw" />
+          <p class="text-center" style="color: #c4c4c4">
+            Copyright ©2020 All rights reserved | This template is made with
+            <span class="fa fa-heart" style="color: red"></span> by Haseeb
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="container-fluid">
+      <div class="modal fade" id="blog">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1>log in</h1>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="email1">E-Mail</label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="form-control"
+                    id="email1"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input
+                    type="password"
+                    placeholder="Enter your email"
+                    class="form-control"
+                    id="password"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-primary" data-dismiss="modal">
+                submitt
+              </button>
+              <button class="btn btn-danger" data-dismiss="modal">close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="elements">
+      <div
+        class="modal-dialog modal-dialog-centered"
+        style="background-color: yellow"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1>elements</h1>
+            <button
+              type="button"
+              class="close"
+              aria-label="close"
+              data-dismiss="modal"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="">First Name:</label>
+                <input
+                  type="text"
+                  placeholder="Enter your first name "
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Last Name:</label>
+                <input
+                  type="text"
+                  placeholder="Enter your last name "
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Phone Number:</label>
+                <input
+                  type="number "
+                  placeholder="Enter your phone number "
+                  class="form-control"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">
+              Submitt
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
